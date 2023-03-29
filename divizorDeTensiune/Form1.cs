@@ -37,6 +37,10 @@ namespace divizorDeTensiune
             Text = R1.ToString();
             Text += " : " + fdivizorDeTensiune(5.0f,R1 , 75.0f).ToString();
 
+            float Rx = calculRezistentaR1(5.0f, 0.23f, 75.0f);
+            Text = Rx.ToString();
+            Text += " : " + fdivizorDeTensiune(5.0f, Rx, 75.0f).ToString();
+
         }
     }
 }
